@@ -21,3 +21,9 @@ return smth3
 ● store을 수정할 수 있는 유일한 방법은 action을 보내는 방법뿐이다.
 ● state를 mutate하지 말아야한다.
 ▷ mutating state하는 대신에 new state objects를 리턴해야 한다.
+
+connect는 argument로 state와 dispatch를 가진다.
+● mapStateToProps는 두 종류의 argument와 함께 호출되는 function이다.
+▷ 첫번째 argument는 Redux store에서 온 state이다.
+▷ 두번째 argument는 component의 props이다.
+※connect()는 return한 것을 component의 prop에 추가해준다.
