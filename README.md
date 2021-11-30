@@ -27,3 +27,7 @@ connect는 argument로 state와 dispatch를 가진다.
 ▷ 첫번째 argument는 Redux store에서 온 state이다.
 ▷ 두번째 argument는 component의 props이다.
 ※connect()는 return한 것을 component의 prop에 추가해준다.
+
+mapState는 필요하지 않고 dispatch만 필요하다.
+▷ connect( null, mapDispatchToProps);
+● mapDispatchToProps( dispatch, ownProps )
