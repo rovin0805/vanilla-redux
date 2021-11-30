@@ -7,13 +7,14 @@ const addToDo = (text) => {
   return {
     type: ADD_TODO,
     text,
+    id: Date.now(),
   };
 };
 
 const deleteToDo = (id) => {
   return {
     type: DELETE_TODO,
-    id,
+    id: parseInt(id),
   };
 };
 
