@@ -16,3 +16,8 @@ default:
 return smth3
 }
 ✅ string으로 바로 쓰는 대신에 const variable로 선언해서 사용하기 -> 에러 발견 용이
+
+● state는 single source of truth이며, read-only이다
+● store을 수정할 수 있는 유일한 방법은 action을 보내는 방법뿐이다.
+● state를 mutate하지 말아야한다.
+▷ mutating state하는 대신에 new state objects를 리턴해야 한다.
